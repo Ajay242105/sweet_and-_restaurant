@@ -1,204 +1,275 @@
-                                    /* for font */
-                                    
-                                    @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
-                                    * {
-                                        font-family: 'Dosis', sans-serif;
-                                        margin: 0;
-                                        padding: 0;
-                                        box-sizing: border-box;
-                                        outline: none;
-                                        text-decoration: none;
-                                        text-transform: capitalize;
-                                        transition: all 0.4s cubic-bezier(.43, 1.1, .62, 1.08);
-                                    }
-                                    
-                                    *>img {
-                                        user-select: none;
-                                        pointer-events: none;
-                                    }
-                                    
-                                    html {
-                                        font-size: 62.5%;
-                                        overflow-x: none;
-                                        scroll-behavior: smooth;
-                                        scroll-padding-top: 6rem;
-                                    }
-                                    
-                                    section {
-                                        padding: 5rem 10%;
-                                    }
-                                    /* get  started */
-                                    
-                                    .btn {
-                                        margin-top: 1rem;
-                                        display: inline-block;
-                                        background: #cd9452;
-                                        color: white;
-                                        font-size: 2rem;
-                                        cursor: pointer;
-                                        padding: 1rem 3rem;
-                                    }
-                                    
-                                    .btn:hover {
-                                        letter-spacing: .2rem;
-                                    }
-                                    
-                                    .header {
-                                        padding-top: 2rem;
-                                        padding-bottom: 2rem;
-                                        display: flex;
-                                        align-items: center;
-                                        justify-content: space-between;
-                                        box-shadow: 2px .5rem rgb(249, 246, 246);
-                                        position: sticky;
-                                        top: 0;
-                                        left: 0;
-                                        right: 0;
-                                        z-index: 1000;
-                                        border: .5px solid rgba(139, 135, 135, 0.3);
-                                        background: white;
-                                    }
-                                    
-                                    .header .logo {
-                                        font-size: 2.5rem;
-                                        font-weight: bolder;
-                                        color: black;
-                                    }
-                                    
-                                    .header .logo i {
-                                        color: rgba(117, 117, 37, 0.982);
-                                        padding-right: .7rem;
-                                    }
-                                    
-                                    .header .navbar a {
-                                        font-size: 2rem;
-                                        margin-left: 2rem;
-                                        color: rgb(53, 51, 51);
-                                    }
-                                    
-                                    .header .navbar a:hover {
-                                        font-size: 3rem;
-                                        color: black;
-                                    }
-                                    
-                                    #menu-btn {
-                                        font-size: 2rem;
-                                        cursor: pointer;
-                                        color: black;
-                                        display: none;
-                                    }
-                                    /* to rotate menu button */
-                                    
-                                    .fa-times {
-                                        transform: rotate(180deg);
-                                    }
-                                    
-                                    @media(max-width:1200px) {
-                                        section {
-                                            padding: 3rem 5%;
+                                        /* for font */
+                                        
+                                        @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+                                        * {
+                                            font-family: 'Dosis', sans-serif;
+                                            margin: 0;
+                                            padding: 0;
+                                            box-sizing: border-box;
+                                            outline: none;
+                                            text-decoration: none;
+                                            text-transform: capitalize;
+                                            transition: all 0.4s cubic-bezier(.43, 1.1, .62, 1.08);
                                         }
-                                    }
-                                    
-                                    @media(max-width:991px) {
-                                        section {
-                                            padding: 3rem 2rem;
+                                        
+                                        *>img {
+                                            user-select: none;
+                                            pointer-events: none;
                                         }
+                                        
                                         html {
-                                            font-size: 55%;
+                                            font-size: 62.5%;
+                                            overflow-x: none;
+                                            scroll-behavior: smooth;
+                                            scroll-padding-top: 6rem;
                                         }
-                                    }
-                                    
-                                    @media(max-width: 768px) {
-                                        #menu-btn {
+                                        
+                                        section {
+                                            padding: 5rem 10%;
+                                        }
+                                        /* get  started */
+                                        
+                                        .btn {
+                                            margin-top: 1rem;
                                             display: inline-block;
+                                            background: #cd9452;
+                                            color: white;
+                                            font-size: 2rem;
+                                            cursor: pointer;
+                                            padding: 1rem 3rem;
                                         }
-                                        .header .navbar {
-                                            position: absolute;
-                                            top: 99%;
+                                        
+                                        .btn:hover {
+                                            letter-spacing: .2rem;
+                                        }
+                                        
+                                        .header {
+                                            padding-top: 2rem;
+                                            padding-bottom: 2rem;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: space-between;
+                                            box-shadow: 2px .5rem rgb(249, 246, 246);
+                                            position: sticky;
+                                            top: 0;
                                             left: 0;
                                             right: 0;
-                                            border: 0px solid rgba(139, 135, 135, 0.3);
-                                            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                                            z-index: 1000;
+                                            border: .5px solid rgba(139, 135, 135, 0.3);
+                                            background: white;
                                         }
-                                        .header .navbar.active {
-                                            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                                        
+                                        .header .logo {
+                                            font-size: 2.5rem;
+                                            font-weight: bolder;
+                                            color: black;
                                         }
+                                        
+                                        .header .logo i {
+                                            color: rgba(117, 117, 37, 0.982);
+                                            padding-right: .7rem;
+                                        }
+                                        
                                         .header .navbar a {
+                                            font-size: 2rem;
+                                            margin-left: 2rem;
+                                            color: rgb(53, 51, 51);
+                                        }
+                                        
+                                        .header .navbar a:hover {
+                                            font-size: 3rem;
+                                            color: rgb(231, 228, 228);
+                                        }
+                                        
+                                        #menu-btn {
+                                            font-size: 2rem;
+                                            cursor: pointer;
+                                            color: black;
+                                            display: none;
+                                        }
+                                        /* to rotate menu button */
+                                        
+                                        .fa-times {
+                                            transform: rotate(180deg);
+                                        }
+                                        
+                                        @media(max-width:1200px) {
+                                            section {
+                                                padding: 3rem 5%;
+                                            }
+                                        }
+                                        
+                                        @media(max-width:991px) {
+                                            section {
+                                                padding: 3rem 2rem;
+                                            }
+                                            html {
+                                                font-size: 55%;
+                                            }
+                                            .home .slide .content h3 {
+                                                font-size: 15vw;
+                                            }
+                                        }
+                                        
+                                        @media(max-width: 768px) {
+                                            #menu-btn {
+                                                display: inline-block;
+                                            }
+                                            .header .navbar {
+                                                position: absolute;
+                                                top: 99%;
+                                                left: 0;
+                                                right: 0;
+                                                border: 0px solid rgba(139, 135, 135, 0.3);
+                                                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+                                            }
+                                            .header .navbar.active {
+                                                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                                            }
+                                            .header .navbar a {
+                                                display: block;
+                                                margin: 1rem;
+                                            }
+                                            .header .navbar a {
+                                                font-size: 2rem;
+                                                margin-left: 1rem;
+                                                color: rgb(242, 242, 242);
+                                            }
+                                        }
+                                        
+                                        @media(max-width:450px) {
+                                            html {
+                                                font-size: 50%;
+                                            }
+                                            .header .navbar a {
+                                                font-size: 2rem;
+                                                margin-left: 1rem;
+                                                color: rgb(242, 242, 242);
+                                            }
+                                        }
+                                        
+                                        @keyframes fadeIn {
+                                            0% {
+                                                transform: translatey(-4rem) scale(0);
+                                                opacity: 0;
+                                            }
+                                        }
+                                        
+                                        .home {
+                                            padding: 0;
+                                            background: rgba(0, 0, 0, 0.7);
+                                        }
+                                        
+                                        .home .slide {
+                                            min-height: 100vh;
+                                            background-size: cover !important;
+                                            background-position: center !important;
+                                            z-index: 0;
+                                            position: relative;
+                                            display: flex;
+                                            justify-content: center;
+                                        }
+                                        
+                                        .home .slide::before {
+                                            content: '';
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            height: 100%;
+                                            width: 100%;
+                                            background: rgba(0, 0, 0, .7);
+                                            z-index: -1;
+                                        }
+                                        
+                                        .home .slide .content {
+                                            text-align: center;
+                                            width: 70rem;
+                                            padding-top: 230px;
+                                        }
+                                        
+                                        .home .slide .content span {
+                                            font-size: 3rem;
                                             display: block;
-                                            margin: 1rem;
+                                            padding-bottom: .5rem;
+                                            color: #ccc;
+                                            animation: fadeIn 0.4s cubic-bezier(.54, 1.3, .63, 1.34) .2s backwards;
                                         }
-                                    }
-                                    
-                                    @media(max-width:450px) {
-                                        html {
-                                            font-size: 50%;
+                                        
+                                        .home .slide .content h3 {
+                                            font-size: 8vw;
+                                            text-transform: uppercase;
+                                            color: white;
+                                            text-shadow: 0 .5rem 1rem rgba(0, 0, 0, .7);
+                                            line-height: 1;
+                                            padding: 1rem 0;
+                                            animation: fadeIn 0.4s cubic-bezier(.54, 1.3, .63, 1.34) .4s backwards;
                                         }
-                                    }
-                                    
-                                    .home {
-                                        padding: 0;
-                                        background: rgba(0, 0, 0, 0.7);
-                                    }
-                                    
-                                    .home .slide {
-                                        min-height: 100vh;
-                                        background-size: cover !important;
-                                        background-position: center !important;
-                                        z-index: 0;
-                                        position: relative;
-                                        display: flex;
-                                        justify-content: center;
-                                    }
-                                    
-                                    .home .slide::before {
-                                        content: '';
-                                        position: absolute;
-                                        top: 0;
-                                        left: 0;
-                                        height: 100%;
-                                        width: 100%;
-                                        background: rgba(0, 0, 0, .7);
-                                        z-index: -1;
-                                    }
-                                    
-                                    .home .slide .content {
-                                        text-align: center;
-                                        width: 70rem;
-                                        padding-top: 230px;
-                                    }
-                                    
-                                    .home .slide .content span {
-                                        font-size: 3rem;
-                                        display: block;
-                                        padding-bottom: .5rem;
-                                        color: #ccc;
-                                    }
-                                    
-                                    .home .slide .content h3 {
-                                        font-size: 8vw;
-                                        text-transform: uppercase;
-                                        color: white;
-                                        text-shadow: 0 .5rem 1rem rgba(0, 0, 0, .7);
-                                        line-height: 1;
-                                        padding: 1rem 0;
-                                    }
-                                    
-                                    .swiper-button-next,
-                                    .swiper-button-prev {
-                                        height: 5rem;
-                                        width: 5rem;
-                                        line-height: 5rem;
-                                        background: white;
-                                        color: black;
-                                    }
-                                    
-                                    .swiper-button-next:hover,
-                                    .swiper-button-prev:hover {
-                                        background: #cd9452;
-                                        color: white;
-                                    }
-                                    
-                                    .swiper-button-next::after,
-                                    .swiper-button-prev::after {
-                                        font-size: 2rem;
-                                    }
+                                        
+                                        .home .slide .content .btn {
+                                            animation: fadeIn 0.4s cubic-bezier(.54, 1.3, .63, 1.34) .6s backwards;
+                                        }
+                                        
+                                        .swiper-button-next,
+                                        .swiper-button-prev {
+                                            height: 5rem;
+                                            width: 5rem;
+                                            line-height: 5rem;
+                                            background: white;
+                                            color: black;
+                                        }
+                                        
+                                        .swiper-button-next:hover,
+                                        .swiper-button-prev:hover {
+                                            background: #cd9452;
+                                            color: white;
+                                        }
+                                        
+                                        .swiper-button-next::after,
+                                        .swiper-button-prev::after {
+                                            font-size: 2rem;
+                                        }
+                                        
+                                        .swiper-button-next::after,
+                                        .swiper-button-prev::after {
+                                            font-size: 2rem;
+                                        }
+                                        
+                                        .about {
+                                            display: flex;
+                                            align-items: center;
+                                            flex-wrap: wrap;
+                                            gap: 2rem;
+                                        }
+                                        
+                                        .about .image {
+                                            flex: 1 1 41rem;
+                                        }
+                                        
+                                        .about .image img {
+                                            width: 100%;
+                                        }
+                                        
+                                        .about .content {
+                                            flex: 1 1 41rem;
+                                        }
+                                        
+                                        .about .content .tittle {
+                                            font-size: 4rem;
+                                            color: black;
+                                        }
+                                        
+                                        .about .content p {
+                                            font-size: 3rem;
+                                            color: rgb(54, 49, 49);
+                                            padding: 1rem 0;
+                                            line-height: 2;
+                                        }
+                                        
+                                        .about .content .icon-container {
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                            gap: 2rem;
+                                            margin-top: 2rem;
+                                        }
+                                        
+                                        .about .content .icon-container .icon s {}
