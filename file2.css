@@ -272,4 +272,6 @@
                                             margin-top: 2rem;
                                         }
                                         
-                                        .about .content .icon-container .icon s {}
+                                        .about .content .icon-container .icons i {
+                                            color: #ecc00f;
+                                        }
