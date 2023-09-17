@@ -148,7 +148,7 @@
                                             .header .navbar a {
                                                 font-size: 2rem;
                                                 margin-left: 1rem;
-                                                color: rgb(242, 242, 242);
+                                                color: rgb(79, 71, 71);
                                             }
                                         }
                                         
@@ -314,12 +314,37 @@
                                         
                                         .food .slide {
                                             text-align: center;
-                                            padding: 3rem 2rem;
+                                            padding: 4rem 2rem;
+                                            border-radius: .5rem;
+                                            transform: scale(.9);
+                                            opacity: .5;
+                                            margin-bottom: 4rem;
+                                            cursor: pointer;
+                                        }
+                                        
+                                        .swiper-pagination-bullet-active {
+                                            background: #cd9452;
+                                        }
+                                        
+                                        .swiper-horizontal>.swiper-pagination-bullets,
+                                        .swiper-pagination-bullets.swiper-pagination-horizontal {
+                                            bottom: 0;
+                                        }
+                                        
+                                        .food .swiper-slide-active {
+                                            transform: scale(1);
+                                            opacity: 1;
+                                            background: white;
+                                            box-shadow: 0 .2 1rem rgba(0, 0, 0, .2);
+                                            border: .1rem solid rgba(0, 0, 0, .3);
                                         }
                                         
                                         .food .slide img {
-                                            height: 25rem;
+                                            height: 273px;
+                                            width: 270px;
                                             margin-bottom: 1rem;
+                                            /* border-radius: 100%; */
+                                            /* opacity: .5; */
                                         }
                                         
                                         .food h3 {
@@ -331,4 +356,58 @@
                                         .food .slide .price {
                                             font-size: 2.5rem;
                                             color: #cd9452;
+                                        }
+                                        
+                                        .food-preview-container {
+                                            background: rgba(0, 0, 0, 0.7);
+                                            position: fixed;
+                                            top: 0;
+                                            left: 0;
+                                            height: 100%;
+                                            width: 1005;
+                                            z-index: 1100;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                        }
+                                        
+                                        .food-preview-container .food-preview {
+                                            text-align: center;
+                                            background-color: white;
+                                            padding: 3rem 2rem;
+                                            border-radius: .5rem;
+                                            display: none;
+                                            width: 35rem;
+                                        }
+                                        
+                                        .food-preview-container .food-preview.active {
+                                            display: inline-block;
+                                        }
+                                        
+                                        .food-preview-container .food-preview img {
+                                            height: 25rem;
+                                            width: 245px;
+                                            margin-bottom: 1rem;
+                                        }
+                                        
+                                        .food-preview-container .food-preview h3 {
+                                            padding: 1rem 0;
+                                            font-size: 2.5rem;
+                                            color: rgb(0, 0, 0);
+                                        }
+                                        
+                                        .food-preview-container .food-preview .stars {
+                                            margin-bottom: 1rem;
+                                        }
+                                        
+                                        .food-preview-container .food-preview .stars i {
+                                            font-size: 1.8rem;
+                                            color: #cd9452;
+                                        }
+                                        
+                                        .food-preview-container .food-preview p {
+                                            font-size: 1.6rem;
+                                            color: #2a2929;
+                                            padding: 1rem 0;
+                                            line-height: 2;
                                         }
