@@ -59,4 +59,15 @@ previewContainer.querySelector('#close-preview').onclick = () => {
     previewBox.forEach(close => {
         close.classList.remove('active');
     });
-}
+};
+var swiper = new Swiper(".menu-slider", {
+    grabCursor: true,
+    loop: true,
+    autoheight: true,
+    centeredSlides: true,
+    spaceBetween: 20,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    }
+});
