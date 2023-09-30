@@ -10,9 +10,15 @@ var swiper = new Swiper(".home-slider", {
     grabCursor: true,
     loop: true,
     centeredSlides: true,
+    // autoheight: true,
+
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+    },
+    autoplay: {
+        delay: 4000, // Time in milliseconds between each slide
+        disableOnInteraction: false, // Set to true if you want to stop autoplay on user interaction
     },
 });
 var swiper = new Swiper(".food-slider", {
@@ -70,4 +76,34 @@ var swiper = new Swiper(".menu-slider", {
         el: ".swiper-pagination",
         clickable: true,
     }
+});
+var swiper = new Swiper(".blogs-slider", {
+    grabCursor: true,
+    loop: true,
+    centeredSlides: true,
+    autoheight: true,
+
+    spaceBetween: 20,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    autoplay: {
+        delay: 2000, // Time in milliseconds between each slide
+        disableOnInteraction: false, // Set to true if you want to stop autoplay on user interaction
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            // spaceBetween: 20,
+        },
+        700: {
+            slidesPerView: 2,
+            // spaceBetween: 40,
+        },
+        1000: {
+            slidesPerView: 3,
+            // spaceBetween: 50,
+        },
+    },
 });
