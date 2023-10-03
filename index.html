@@ -154,7 +154,7 @@
             </div>
             <p>Taste the tradition, love the flavor! 🌟.</p>
             <div class="price">Rs.80</div>
-            <a href="#" class="btn">buy now</a>
+            <a href="#" class="btn" id="buy-now-1">buy now</a>
 
         </div>
         <div class="food-preview" data-target="food-2">
@@ -170,7 +170,7 @@
             </div>
             <p>A cup of masala tea is like a hug for your taste buds. 😊☕/p>
                 <div class="price">Rs.20</div>
-                <a href="#" class="btn">buy now</a>
+                <a href="#" class="btn" id="buy-now-2">buy now</a>
 
         </div>
 
@@ -187,7 +187,7 @@
             </div>
             <p>Share the joy, share the pakodas! 🤗</p>
             <div class="price">Rs.40</div>
-            <a href="#" class="btn">buy now</a>
+            <a href="#" class="btn" id="buy-now-3">buy now</a>
 
         </div>
         <div class="food-preview" data-target="food-4">
@@ -203,7 +203,7 @@
             </div>
             <p>Savor the flavor in every bite. ❤️</p>
             <div class="price">Rs.40</div>
-            <a href="#" class="btn">buy now</a>
+            <a href="#" class="btn" id="buy-now-4">buy now</a>
 
         </div>
         <div class="food-preview" data-target="food-5">
@@ -219,7 +219,7 @@
             </div>
             <p>Crispy triangles of delight! 🥟✨.</p>
             <div class="price">Rs.30</div>
-            <a href="#" class="btn">buy now</a>
+            <a href="#" class="btn" id="buy-now-5">buy now</a>
 
         </div>
 
@@ -581,12 +581,17 @@
                         <span>food name</span>
                         <input type="text" placeholder="food you want" required>
                     </div>
+                    <!-- <div class="inputBox">
+                        <span>order details</span>
+                        <textarea name="" id="order-details" class="order-details" cols="30" rows="10" placeholder="your order"></textarea>
+                    </div> -->
                     <div class="inputBox">
                         <span>order details</span>
-                        <input type="text" placeholder="specifics with food">
+                        <textarea name="" id="order-details" class="order-details" cols="30" rows="10" placeholder="your order"></textarea>
                     </div>
+
                     <div class="inputBox">
-                        <span>your address</span> <address> <textarea name="" id="" cols="30" rows="10" placeholder="enter your address"></textarea></address>
+                        <span>your address</span> <address> <textarea name="" id="" cols="30" rows="100" placeholder="enter your address"></textarea></address>
                     </div>
                 </div>
                 <div class="box">
@@ -835,9 +840,11 @@
 
 
 
+
     <script src=" https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js " integrity="sha512-b4rL1m5b76KrUhDkj2Vf14Y0l1NtbiNXwV+SzOzLGv6Tz1roJHa70yr8RmTUswrauu2Wgb/xBJPR8v80pQYKtQ==" crossorigin=" anonymous
                 " referrerpolicy="no-referrer "></script>
+
     <script src="file3.js "></script>
     <script>
         lightGallery(document.querySelector('.gallery .gallery-container'));

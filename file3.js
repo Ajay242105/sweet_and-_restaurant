@@ -3,7 +3,7 @@ let navbar = document.querySelector('.header .navbar');
 let menubtn = document.querySelector('#menu-btn');
 menubtn.onclick = () => {
     menubtn.classList.toggle('fa-times');
-    navbar.classList.toggle('active');
+    navbar.classList.toggle('active')
 }
 
 var swiper = new Swiper(".home-slider", {
@@ -33,15 +33,15 @@ var swiper = new Swiper(".food-slider", {
     breakpoints: {
         0: {
             slidesPerView: 1,
-            // spaceBetween: 20,
+
         },
         700: {
             slidesPerView: 2,
-            // spaceBetween: 40,
+
         },
         1000: {
             slidesPerView: 3,
-            // spaceBetween: 50,
+
         },
     },
 });
@@ -60,6 +60,47 @@ document.querySelectorAll('.food .slide').forEach(food => {
         });
     };
 });
+
+var orderDetails = [];
+
+// Function to add food item details to the order
+function addToOrder(foodName, price) {
+    var i = 0;
+    var orderItem = {
+        S_no: ++i,
+        foodName: foodName,
+        price: price,
+    };
+    orderDetails.push(orderItem);
+
+    // Call a function to update the order details in the textarea
+    updateOrderDetailsTextarea();
+}
+
+// Function to update the order details in the textarea
+function updateOrderDetailsTextarea() {
+    var orderTextarea = document.getElementById("order-details");
+    var orderText = "";
+
+    orderDetails.forEach(function(item) {
+        orderText += `${item.foodName} - ${item.price}\n`;
+    });
+
+    orderTextarea.value = orderText;
+}
+
+// Add event listeners for each "buy now" button
+document.getElementById("buy-now-1").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the default behavior (e.g., page scroll)
+    addToOrder("special chowmein", "Rs.80");
+});
+
+document.getElementById("buy-now-2").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the default behavior (e.g., page scroll)
+    addToOrder("masala tea", "Rs.20");
+});
+
+// close preview
 previewContainer.querySelector('#close-preview').onclick = () => {
     previewContainer.style.display = 'none';
     previewBox.forEach(close => {
