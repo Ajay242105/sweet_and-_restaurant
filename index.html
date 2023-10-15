@@ -1,3 +1,4 @@
+<!-- https://youtu.be/-dBzfndKwZo?si=dajTLnWOQNee7ixe -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -141,7 +142,8 @@
 
     <section class="food-preview-container">
         <div id="close-preview" class="fas fa-times"></div>
-        <div class="food-preview " data-target="food-1">
+
+        <div class="food-preview" data-target="food-1">
             <img src="images/food-1.jpeg" alt=""><br>
 
             <h3>special chowmein</h3>
@@ -152,15 +154,23 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
             </div>
-            <p>Taste the tradition, love the flavor! 🌟.</p>
-            <div class="price">Rs.80</div>
+            <p>Taste the tradition, love the flavor! 🌟</p>
+            <div class="price">Rs.50</div>
+
+            <div class="quantity">
+                <label for="quantity-1">Quantity:</label>
+                <button onclick="decrement1('special-chowmein')" class="quantity-button" id="decrement-1">-</button>
+                <span class="quantity-value" id="quantity-special-chowmein">1</span>
+                <button onclick="increment1('special-chowmein')" class="quantity-button" id="increment-1">+</button>
+            </div>
+
             <a href="#" class="btn" id="buy-now-1">buy now</a>
 
         </div>
         <div class="food-preview" data-target="food-2">
             <img src="images/food-22.jpg" alt=""><br>
 
-            <h3>masala tea</h3>
+            <h3>masala-tea</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -170,6 +180,14 @@
             </div>
             <p>A cup of masala tea is like a hug for your taste buds. 😊☕/p>
                 <div class="price">Rs.20</div>
+
+                <div class="quantity">
+                    <label for="quantity-2">Quantity:</label>
+                    <button onclick="decrement2('masala-tea')" class="quantity-button" id="decrement-2">-</button>
+                    <span class="quantity-value" id="quantity-masala-tea">1</span>
+                    <button onclick="increment2('masala-tea')" class="quantity-button" id="increment-2">+</button>
+                </div>
+
                 <a href="#" class="btn" id="buy-now-2">buy now</a>
 
         </div>
@@ -187,7 +205,16 @@
             </div>
             <p>Share the joy, share the pakodas! 🤗</p>
             <div class="price">Rs.40</div>
+
+            <div class="quantity">
+                <label for="quantity-3">Quantity:</label>
+                <button onclick="decrement3('pakoda')" class="quantity-button" id="decrement-3">-</button>
+                <span class="quantity-value" id="quantity-pakoda">1</span>
+                <button onclick="increment3('pakoda')" class="quantity-button" id="increment-3">+</button>
+            </div>
             <a href="#" class="btn" id="buy-now-3">buy now</a>
+
+            <!-- <a href="#" class="btn" id="buy-now-3">buy now</a> -->
 
         </div>
         <div class="food-preview" data-target="food-4">
@@ -203,6 +230,12 @@
             </div>
             <p>Savor the flavor in every bite. ❤️</p>
             <div class="price">Rs.40</div>
+            <div class="quantity">
+                <label for="quantity-4">Quantity:</label>
+                <button onclick="decrement4('burgar')" class="quantity-button" id="decrement-4">-</button>
+                <span class="quantity-value" id="quantity-burgar">1</span>
+                <button onclick="increment4('burgar')" class="quantity-button" id="increment-4">+</button>
+            </div>
             <a href="#" class="btn" id="buy-now-4">buy now</a>
 
         </div>
@@ -219,6 +252,14 @@
             </div>
             <p>Crispy triangles of delight! 🥟✨.</p>
             <div class="price">Rs.30</div>
+
+            <div class="quantity">
+                <label for="quantity-5">Quantity:</label>
+                <button onclick="decrement5('samosa')" class="quantity-button" id="decrement-5">-</button>
+                <span class="quantity-value" id="quantity-samosa">1</span>
+                <button onclick="increment5('samosa')" class="quantity-button" id="increment-5">+</button>
+            </div>
+
             <a href="#" class="btn" id="buy-now-5">buy now</a>
 
         </div>
@@ -849,6 +890,11 @@
     <script>
         lightGallery(document.querySelector('.gallery .gallery-container'));
     </script>
+
+</body>
+
+</html> lightGallery(document.querySelector('.gallery .gallery-container'));
+</script>
 
 </body>
 
