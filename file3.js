@@ -1,5 +1,5 @@
 // slider code is taken from swiper demos
-let navbar = document.querySelector('.header .navbar');
+let navbar = document.querySelector('.header.navbar');
 let menubtn = document.querySelector('#menu-btn');
 menubtn.onclick = () => {
     menubtn.classList.toggle('fa-times');
@@ -21,6 +21,7 @@ var swiper = new Swiper(".home-slider", {
         disableOnInteraction: false, // Set to true if you want to stop autoplay on user interaction
     },
 });
+
 var swiper = new Swiper(".food-slider", {
     grabCursor: true,
     loop: true,
@@ -62,19 +63,14 @@ document.querySelectorAll('.food .slide').forEach(food => {
     };
 });
 
-// let data = 0;
-let specialChowmeinQuantity = 0;
-// let masalaTeaQuantity = 0;
 
 
 // Initialize order details
 var orderDetails = [];
 
-//printing default value of data that is 0 in h2 tag
-document.getElementById("quantity-special-chowmein").innerText = specialChowmeinQuantity;
-// document.getElementById("quantity-masala-tea").innerText = masalaTeaQuantity;
-
 // Function to add food item details to the order
+// 
+
 function addToOrder(foodName, price, quantity) {
     var orderItem = {
         foodName: foodName,
@@ -83,7 +79,9 @@ function addToOrder(foodName, price, quantity) {
     };
     orderDetails.push(orderItem);
     updateOrderDetailsTextarea();
+    console.log(orderDetails); // Log the order details array
 }
+
 
 // Function to update the preview quantity and total
 function updatePreviewQuantity(foodName) {
@@ -131,6 +129,9 @@ let pakodaQuantity = 0;
 let masalaQuantity = 0;
 let burgarQuantity = 0;
 let samosaQuantity = 0;
+let dosaQuantity = 0;
+let parathaQuantity = 0;
+let daltadkaQuantity = 0;
 
 
 // Initialize default value of data (0) in the h2 tag for Pakoda
@@ -139,7 +140,9 @@ document.getElementById("quantity-masala-tea").innerText = masalaQuantity;
 document.getElementById("quantity-pakoda").innerText = pakodaQuantity;
 document.getElementById("quantity-burgar").innerText = burgarQuantity;
 document.getElementById("quantity-samosa").innerText = samosaQuantity;
-
+document.getElementById("quantity-special-masaladosa").innerText = dosaQuantity;
+document.getElementById("quantity-aloo-paratha").innerText = parathaQuantity;
+document.getElementById("quantity-dal-tadka").innerText = daltadkaQuantity;
 
 
 // Function to increment the quantity 
@@ -206,7 +209,7 @@ function increment4(foodName) {
 
 
 function decrement4(foodName) {
-    if (foodName === 'pakoda' && burgarQuantity > 0) {
+    if (foodName === 'burgar' && burgarQuantity > 0) {
         burgarQuantity -= 1;
         document.getElementById("quantity-burgar").innerText = burgarQuantity;
         updatePreviewQuantity("food-4"); // Update the preview quantity
@@ -228,6 +231,55 @@ function decrement5(foodName) {
         samosaQuantity -= 1;
         document.getElementById("quantity-samosa").innerText = samosaQuantity;
         updatePreviewQuantity("food-5"); // Update the preview quantity
+    }
+}
+
+function increment6(foodName) {
+    if (foodName === 'masala-dosa') {
+        dosaQuantity += 1;
+        document.getElementById("quantity-special-masaladosa").innerText = dosaQuantity;
+        updatePreviewQuantity("food-6"); // Update the preview quantity
+    }
+}
+// Function to decrement the quantity for Pakoda
+function decrement6(foodName) {
+    if (foodName === 'masala-dosa' && dosaQuantity > 0) {
+        dosaQuantity -= 1;
+        document.getElementById("quantity-special-masaladosa").innerText = dosaQuantity;
+        updatePreviewQuantity("food-6"); // Update the preview quantity
+    }
+}
+
+//Aloo-paratha
+function increment7(foodName) {
+    if (foodName === 'aloo-paratha') {
+        parathaQuantity += 1;
+        document.getElementById("quantity-aloo-paratha").innerText = parathaQuantity;
+        updatePreviewQuantity("food-7"); // Update the preview quantity
+    }
+}
+// Function to decrement the quantity for Pakoda
+function decrement7(foodName) {
+    if (foodName === 'aloo-paratha' && parathaQuantity > 0) {
+        parathaQuantity -= 1;
+        document.getElementById("quantity-aloo-paratha").innerText = parathaQuantity;
+        updatePreviewQuantity("food-7"); // Update the preview quantity
+    }
+}
+
+function increment7(foodName) {
+    if (foodName === 'dal-tadka') {
+        daltadkaQuantity += 1;
+        document.getElementById("quantity-dal-tadka").innerText = daltadkaQuantity;
+        updatePreviewQuantity("food-10"); // Update the preview quantity
+    }
+}
+// Function to decrement the quantity for Pakoda
+function decrement7(foodName) {
+    if (foodName === 'dal-tadka' && daltadkaQuantity > 0) {
+        daltadkaQuantity -= 1;
+        document.getElementById("quantity-dal-tadka").innerText = daltadkaQuantity;
+        updatePreviewQuantity("food-10"); // Update the preview quantity
     }
 }
 
@@ -262,6 +314,27 @@ document.getElementById("buy-now-5").addEventListener("click", function(event) {
 
     addToOrder("samosa 2pcs", 30, samosaQuantity);
 });
+document.getElementById("buy-now-6").addEventListener("click", function(event) {
+    alert("Masala Dosa hasbeen added successfully");
+
+    event.preventDefault();
+
+    addToOrder("Masala-Dosa", 69, dosaQuantity);
+});
+document.getElementById("buy-now-7").addEventListener("click", function(event) {
+    alert("Aloo-Paratha hasbeen added successfully");
+
+    event.preventDefault();
+
+    addToOrder("Aloo-Paratha", 39, parathaQuantity);
+});
+document.getElementById("buy-now-10").addEventListener("click", function(event) {
+    alert("Dal-tadka hasbeen added successfully");
+
+    event.preventDefault();
+
+    addToOrder("al-tadka", 39, daltadkaQuantity);
+});
 
 // Ensure you have the updatePreviewQuantity function and addToOrder function from your existing code.
 
@@ -273,6 +346,41 @@ previewContainer.querySelector('#close-preview').onclick = () => {
     });
 };
 
+function validateForm() {
+    var fullName = document.querySelector('input[name="full-name"]');
+    var email = document.querySelector('input[name="email"]');
+    var mobileNumber = document.querySelector('input[name="mobile-number"]');
+    var address = document.querySelector('textarea[name="address"]');
+
+    if (fullName.value.trim().length <= 6) {
+        alert("Full name must be greater than 6 characters.");
+        fullName.focus();
+        return false;
+    }
+
+    if (email.value.trim() === "") {
+        alert("Please enter your email.");
+        email.focus();
+        return false;
+    }
+
+
+
+
+
+    // Check if the mobile number has exactly 10 digits
+    if (mobileNumber.value.trim().length !== 10 || isNaN(mobileNumber.value.trim())) {
+        alert("Mobile number must be a 10-digit number.");
+        mobileNumber.focus();
+        return false;
+    }
+    if (address.value.trim() === "") {
+        alert("Please enter your address.");
+        address.focus();
+        return false;
+    }
+    return true;
+}
 
 var swiper = new Swiper(".menu-slider", {
     grabCursor: true,
@@ -289,8 +397,7 @@ var swiper = new Swiper(".blogs-slider", {
     grabCursor: true,
     loop: true,
     centeredSlides: true,
-    autoheight: true,
-
+    autoHeight: true,
     spaceBetween: 20,
     pagination: {
         el: ".swiper-pagination",
@@ -303,15 +410,12 @@ var swiper = new Swiper(".blogs-slider", {
     breakpoints: {
         0: {
             slidesPerView: 1,
-            // spaceBetween: 20,
         },
         700: {
             slidesPerView: 2,
-            // spaceBetween: 40,
         },
         1000: {
             slidesPerView: 3,
-            // spaceBetween: 50,
         },
     },
 });
