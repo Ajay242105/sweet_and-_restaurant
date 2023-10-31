@@ -39,36 +39,35 @@
     <section class="home" id="home">
         <div class="swiper home-slider">
             <div class="swiper-wrapper">
-
                 <div class="swiper-slide slide" style="background: url(images/img1.jpg) no-repeat;">
                     <div class="content">
-                        <span>outstanding food </span>
+                        <span>outstanding food</span>
                         <h3>delicious cooking</h3>
                         <a href="#" class="btn">get started</a>
                     </div>
-                </div><br>
-
+                </div>
                 <div class="swiper-slide slide" style="background: url(images/img3.jpg) no-repeat;">
                     <div class="content">
-                        <span>traditional and hygine </span>
+                        <span>traditional and hygiene</span>
                         <h3>simple and tasty recipe</h3>
                         <a href="#" class="btn">get started</a>
                     </div>
-                </div><br>
-
+                </div>
                 <div class="swiper-slide slide" style="background: url(images/img6.jpg) no-repeat;">
                     <div class="content">
-                        <span>are you hungry? </span>
+                        <span>are you hungry?</span>
                         <h3>don't wait!</h3>
-                        <p style="color:rgb(245, 197, 5);font-size:2rem;font-align:center">lets start to order food now</p>
+                        <p style="color: rgb(245, 197, 5); font-size: 2rem; text-align: center;">let's start to order food now</p>
                         <a href="#" class="btn">get started</a>
                     </div>
-                </div><br>
+                </div>
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </div>
     </section>
+
+
     <!-- home-section end -->
 
     <!-- about section start -->
@@ -102,7 +101,7 @@
             <h3>our delicious food</h3>
         </div>
         <div class="swiper food-slider">
-            <div class="swiper-wrapper active ">
+            <div class="swiper-wrapper active">
                 <div class="swiper-slide slide" data-name="food-1">
                     <img src="images/food-1.jpeg" alt="">
                     <h3>special chowmein </h3>
@@ -277,56 +276,65 @@
             <a href="images/g-1.jpg" class="box">
                 <img src="images/g-1.jpg" alt="">
                 <div class="Icon">
-                    <i class="fas fa-plus"></i> </div>
+                    <i class="fas fa-plus"></i>
+                </div>
 
             </a>
             <a href="images/g-2.jpeg" class="box">
                 <img src="images/g-2.jpeg" alt="">
                 <div class="Icon">
-                    <i class="fas fa-plus"></i> </div>
+                    <i class="fas fa-plus"></i>
+                </div>
 
             </a>
             <a href="images/g-3.jpg" class="box">
                 <img src="images/g-3.jpg" alt="">
                 <div class="Icon">
-                    <i class="fas fa-plus"></i> </div>
+                    <i class="fas fa-plus"></i>
+                </div>
 
             </a>
             <a href="images/g-4.jpeg" class="box">
                 <img src="images/g-4.jpeg" alt="">
                 <div class="Icon">
-                    <i class="fas fa-plus"></i> </div>
+                    <i class="fas fa-plus"></i>
+                </div>
 
             </a>
             <a href="images/food-3.jpg" class="box">
                 <img src="images/food-3.jpg" alt="">
                 <div class="Icon">
-                    <i class="fas fa-plus"></i> </div>
+                    <i class="fas fa-plus"></i>
+                </div>
 
             </a>
             <a href="images/g-5.jpg" class="box">
                 <img src="images/g-5.jpg" alt="">
                 <div class="Icon">
-                    <i class="fas fa-plus"></i> </div>
+                    <i class="fas fa-plus"></i>
+                </div>
 
             </a>
             <a href="images/g-6.jpg" class="box">
                 <img src="images/g-6.jpg" alt="">
                 <div class="Icon">
-                    <i class="fas fa-plus"></i> </div>
+                    <i class="fas fa-plus"></i>
+                </div>
 
             </a>
             <a href="#" class="box">
                 <img src="images/g-7.jpeg" alt="">
                 <div class="Icon">
-                    <i class="fas fa-plus"></i> </div>
+                    <i class="fas fa-plus"></i>
+                </div>
 
             </a>
 
             <a href="images/g-9.jpg" class="box">
                 <img src="images/g-9.jpg" alt="">
                 <div class="Icon">
-                    <i class="fas fa-plus"></i> </div>
+                    <i class="fas fa-plus"></i>
+                </div>
 
             </a>
         </div>
@@ -346,36 +354,83 @@
                     <h3 class="title">breakfast</h3>
                     <div class="box-container">
                         <div class="box">
-                            <div class="info">
+                            <div class="info" data-name="food-6">
                                 <h3>Masala Dosa</h3>
                                 <p>Thin rice crepes stuffed with a spiced potato filling, served with coconut chutney and sambar.</p>
                             </div>
-                            <div class="price">Rs.69</div>
-                        </div>
+                            <div class="quantity-part">
 
-                        <div class="box">
-                            <div class="info">
-                                <h3> Aloo Paratha</h3>
-                                <p>Flaky whole wheat flatbreads stuffed with spiced mashed potatoes, served with yogurt and pickles.</p>
+                                <div class="quantity">
+                                    <label for="quantity-6">Quantity:</label>
+                                    <button onclick="decrement6('masala-dosa')" class="quantity-button" id="decrement-6">-</button>
+                                    <span class="quantity-value" id="quantity-special-masaladosa">1</span>
+                                    <button onclick="increment6('masala-dosa')" class="quantity-button" id="increment-6">+</button>
+                                </div>
+                                <div class="price">Rs.69</div>
+
+
+
+                                <a href="#" class="btn-menu" id="buy-now-6">buy now</a>
                             </div>
-                            <div class="price">Rs.69</div>
+                        </div>
+                        <div class="box">
+                            <div class="info" data-name="food-7">
+                                <h3>aloo paratha</h3>
+                                <p>Thin rice crepes stuffed with a spiced potato filling.</p>
+                            </div>
+                            <div class="quantity-part">
+
+                                <div class="quantity">
+                                    <label for="quantity-7">Quantity:</label>
+                                    <button onclick="decrement7('aloo-paratha')" class="quantity-button" id="decrement-7">-</button>
+                                    <span class="quantity-value" id="quantity-aloo-paratha">1</span>
+                                    <button onclick="increment7('aloo-paratha')" class="quantity-button" id="increment-7">+</button>
+                                </div>
+                                <div class="price">Rs.69</div>
+
+
+
+                                <a href="#" class="btn-menu" id="buy-now-7">buy now</a>
+                            </div>
                         </div>
 
+
                         <div class="box">
-                            <div class="info">
+                            <div class="info" data-name="food-8">
                                 <h3>Poha</h3>
                                 <p>Flattened rice cooked with mustard seeds, curry leaves, and turmeric, garnished with peanuts and coriander.</p>
                             </div>
-                            <div class="price">Rs.69</div>
+                            <div class=" quantity-part">
+
+                                <div class="quantity">
+                                    <label for="quantity-1">Quantity:</label>
+                                    <button onclick="decrement6( 'masala-dosa')" class="quantity-button" id="decrement-6">-</button>
+                                    <span class="quantity-value" id="quantity-special-masaladosa">1</span>
+                                    <button onclick="increment6( 'masala-dosa')" class="quantity-button" id="increment-6">+</button>
+                                </div>
+                                <div class="price">Rs.49</div>
+                                <a href="#" class="btn-menu" id="buy-now-6">buy now</a>
+                            </div>
                         </div>
                         <div class="box">
-                            <div class="info">
+                            <div class="info" data-name="food-9">
                                 <h3>Chole Bhature</h3>
                                 <p>A North Indian favorite consisting of fluffy deep-fried bread (bhature) served with spicy chickpea curry (chole).</p>
                             </div>
-                            <div class="price">Rs.69</div>
+                            <div class=" quantity-part">
+
+                                <div class="quantity">
+                                    <label for="quantity-1">Quantity:</label>
+                                    <button onclick="decrement6( 'masala-dosa')" class="quantity-button" id="decrement-6">-</button>
+                                    <span class="quantity-value" id="quantity-special-masaladosa">1</span>
+                                    <button onclick="increment6( 'masala-dosa')" class="quantity-button" id="increment-6">+</button>
+                                </div>
+                                <div class="price">Rs.39</div>
+                                <a href="#" class="btn-menu" id="buy-now-6">buy now</a>
+
+                            </div>
                         </div>
-                        <div class="box">
+                        <!-- <div class="box">
                             <div class="info">
                                 <h3>Chai (Tea)</h3>
                                 <p>A staple beverage enjoyed with breakfast, often prepared with milk, tea leaves, and spices like cardamom and ginger.</p>
@@ -388,108 +443,170 @@
                                 <p>Sweet, deep-fried pretzel-shaped dessert made of fermented batter and soaked in sugar syrup.</p>
                             </div>
                             <div class="price">Rs.69</div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <!-- lunch -->
-                <div class="swiper-slide
-                slide">
+                <div class="swiper-slide slide">
                     <h3 class="title">lunch</h3>
                     <div class="box-container">
                         <div class="box">
-                            <div class="info">
+                            <div class="info" data-name="food-10">
                                 <h3>Dal Tadka</h3>
                                 <p>A lentil dish tempered with spices and ghee.</p>
                             </div>
-                            <div class="price">Rs.69</div>
+                            <div class=" quantity-part">
+
+                                <div class="quantity">
+                                    <label for="quantity-1">Quantity:</label>
+                                    <button onclick="decrement6( 'masala-dosa')" class="quantity-button" id="decrement-6">-</button>
+                                    <span class="quantity-value" id="quantity-special-masaladosa">1</span>
+                                    <button onclick="increment6( 'masala-dosa')" class="quantity-button" id="increment-6">+</button>
+                                </div>
+                                <div class="price">Rs.69</div>
+                                <a href="#" class="btn-menu" id="buy-now-6">buy now</a>
+                            </div>
                         </div>
                         <div class="box">
-                            <div class="info">
+                            <div class="info" data-name="food-11">
                                 <h3>Paneer Butter Masala</h3>
                                 <p>Paneer (Indian cottage cheese) cooked in a rich tomato and butter sauce.</p>
                             </div>
-                            <div class="price">Rs.69</div>
+                            <div class="quantity-part">
+
+                                <div class="quantity">
+                                    <label for="quantity-1">Quantity:</label>
+                                    <button onclick="decrement6( 'masala-dosa')" class="quantity-button" id="decrement-6">-</button>
+                                    <span class="quantity-value" id="quantity-special-masaladosa">1</span>
+                                    <button onclick="increment6( 'masala-dosa')" class="quantity-button" id="increment-6">+</button>
+                                </div>
+                                <div class="price">Rs.69</div>
+                                <a href="#" class="btn-menu" id="buy-now-6">buy now</a>
+                            </div>
                         </div>
                         <div class="box">
-                            <div class="info">
+                            <div class="info" data-name="food-12">
                                 <h3>Chana Masala</h3>
                                 <p>Spiced chickpea curry.</p>
                             </div>
-                            <div class="price">Rs.69</div>
+                            <div class="quantity-part">
+
+                                <div class="quantity">
+                                    <label for="quantity-1">Quantity:</label>
+                                    <button onclick="decrement6( 'masala-dosa')" class="quantity-button" id="decrement-6">-</button>
+                                    <span class="quantity-value" id="quantity-special-masaladosa">1</span>
+                                    <button onclick="increment6( 'masala-dosa')" class="quantity-button" id="increment-6">+</button>
+                                </div>
+
+                                <div class="price">Rs.69</div>
+                                <a href="#" class="btn-menu" id="buy-now-6">buy now</a>
+                            </div>
                         </div>
-                        <div class="box">
+                        <!-- <div class="box">
                             <div class="info">
                                 <h3>Mixed Vegetable Curry</h3>
                                 <p> Assorted vegetables cooked in a flavorful gravy.</p>
 
                             </div>
                             <div class="price">Rs.69</div>
-                        </div>
+                            <a href="#" class="btn-menu" id="buy-now-6">buy now</a>
+
+                        </div> -->
                         <div class="box">
-                            <div class="info">
+                            <div class="info" data-name="food-13">
                                 <h3>Jeera Rice </h3>
                                 <p>Fragrant cumin-flavored rice.</p>
                             </div>
-                            <div class="price">Rs.69</div>
-                        </div>
-                        <div class="box">
-                            <div class="info">
-                                <h3>Roti/Naan </h3>
-                                <p>Choice of Indian bread, like Roti or Naan.</p>
-
+                            <div class="quantity-part">
+                                <div class="quantity">
+                                    <label for="quantity-1">Quantity:</label>
+                                    <button onclick="decrement6( 'masala-dosa')" class="quantity-button" id="decrement-6">-</button>
+                                    <span class="quantity-value" id="quantity-special-masaladosa">1</span>
+                                    <button onclick="increment6( 'masala-dosa')" class="quantity-button" id="increment-6">+</button>
+                                </div>
+                                <div class="price">Rs.69</div>
+                                <a href="#" class="btn-menu" id="buy-now-6">buy now</a>
                             </div>
-                            <div class="price">Rs.69</div>
+
                         </div>
-                        <div class="box">
-                            <div class="info">
-                                <h3>Salad </h3>
-                                <p>Fresh mixed greens with a tangy dressing.</p>
-
-                            </div>
-                            <div class="price">Rs.69</div>
-                        </div>
-
-
-
                     </div>
                 </div>
 
 
                 <!-- dinner -->
 
-                <div class="swiper-slide
-                slide">
+                <div class="swiper-slide slide">
                     <h3 class="title">dinner</h3>
                     <div class="box-container">
                         <div class="box">
-                            <div class="info">
+                            <div class="info" data-name="food-14">
                                 <h3>Butter Chicken</h3>
                                 <p>Tender chicken pieces cooked in a rich and creamy tomato-based sauce.</p>
                             </div>
-                            <div class="price">Rs.69</div>
+                            <div class="quantity-part">
+
+                                <div class="quantity">
+                                    <label for="quantity-1">Quantity:</label>
+                                    <button onclick="decrement6( 'masala-dosa')" class="quantity-button" id="decrement-6">-</button>
+                                    <span class="quantity-value" id="quantity-special-masaladosa">1</span>
+                                    <button onclick="increment6( 'masala-dosa')" class="quantity-button" id="increment-6">+</button>
+                                </div>
+                                <div class="price">Rs.69</div>
+                                <a href="#" class="btn-menu" id="buy-now-6">buy now</a>
+                            </div>
                         </div>
                         <div class="box">
-                            <div class="info">
+                            <div class="info" data-name="food-15">
                                 <h3>Dal Makhani </h3>
                                 <p>Slow-cooked black lentils in a creamy tomato gravy.</p>
                             </div>
-                            <div class="price">Rs.69</div>
+                            <div class="quantity-part">
+
+                                <div class="quantity">
+                                    <label for="quantity-1">Quantity:</label>
+                                    <button onclick="decrement6( 'masala-dosa')" class="quantity-button" id="decrement-6">-</button>
+                                    <span class="quantity-value" id="quantity-special-masaladosa">1</span>
+                                    <button onclick="increment6( 'masala-dosa')" class="quantity-button" id="increment-6">+</button>
+                                </div>
+                                <div class="price">Rs.69</div>
+                                <a href="#" class="btn-menu" id="buy-now-6">buy now</a>
+                            </div>
                         </div>
                         <div class="box">
-                            <div class="info">
+                            <div class="info" data-name="food-16">
                                 <h3>Palak Paneer</h3>
                                 <p>Paneer cubes in a flavorful spinach and tomato gravy.</p>
                             </div>
-                            <div class="price">Rs.69</div>
+                            <div class="quantity-part">
+
+                                <div class="quantity">
+                                    <label for="quantity-1">Quantity:</label>
+                                    <button onclick="decrement6( 'masala-dosa')" class="quantity-button" id="decrement-6">-</button>
+                                    <span class="quantity-value" id="quantity-special-masaladosa">1</span>
+                                    <button onclick="increment6( 'masala-dosa')" class="quantity-button" id="increment-6">+</button>
+                                </div>
+                                <div class="price">Rs.69</div>
+                                <a href="#" class="btn-menu" id="buy-now-6">buy now</a>
+                            </div>
                         </div>
                         <div class="box">
-                            <div class="info">
+                            <div class="info" data-name="food-17">
                                 <h3>Chicken Biryani</h3>
                                 <p>Fragrant basmati rice cooked with marinated chicken, spices, and herbs.</p>
                             </div>
-                            <div class="price">Rs.69</div>
+                            <div class="quantity-part">
+
+                                <div class="quantity">
+                                    <label for="quantity-1">Quantity:</label>
+                                    <button onclick="decrement6( 'masala-dosa')" class="quantity-button" id="decrement-6">-</button>
+                                    <span class="quantity-value" id="quantity-special-masaladosa">1</span>
+                                    <button onclick="increment6( 'masala-dosa')" class="quantity-button" id="increment-6">+</button>
+                                </div>
+                                <div class="price">Rs.69</div>
+                                <a href="#" class="btn-menu" id="buy-now-6">buy now</a>
+                            </div>
                         </div>
-                        <div class="box">
+                        <!-- <div class="box">
                             <div class="info">
                                 <h3>Mixed Vegetable Korma </h3>
                                 <p>Assorted vegetables in a creamy coconut and cashew nut gravy.</p>
@@ -544,43 +661,83 @@
 
                             </div>
                             <div class="price">Rs.69</div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <!-- cold-drink -->
-                <div class="swiper-slide
-                slide">
+                <div class="swiper-slide slide">
                     <h3 class="title">cold-drink</h3>
                     <div class="box-container">
                         <div class="box">
-                            <div class="info">
+                            <div class="info" data-name="food-18">
                                 <h3>Iced Tea</h3>
                                 <p>Chill in the warmth we bring to your tummy and heart.</p>
                             </div>
-                            <div class="price">Rs.69</div>
+                            <div class="quantity-part">
+
+                                <div class="quantity">
+                                    <label for="quantity-1">Quantity:</label>
+                                    <button onclick="decrement6( 'masala-dosa')" class="quantity-button" id="decrement-6">-</button>
+                                    <span class="quantity-value" id="quantity-special-masaladosa">1</span>
+                                    <button onclick="increment6( 'masala-dosa')" class="quantity-button" id="increment-6">+</button>
+                                </div>
+                                <div class="price">Rs.69</div>
+                                <a href="#" class="btn-menu" id="buy-now-6">buy now</a>
+                            </div>
+
                         </div>
                         <div class="box">
-                            <div class="info">
+                            <div class="info" data-name="food-19">
                                 <h3>Mango Lassi</h3>
                                 <p> Cold black or green tea sweetened and flavored with lemon or peach.</p>
                             </div>
-                            <div class="price">Rs.69</div>
+                            <div class="quantity-part">
+
+                                <div class="quantity">
+                                    <label for="quantity-1">Quantity:</label>
+                                    <button onclick="decrement6( 'masala-dosa')" class="quantity-button" id="decrement-6">-</button>
+                                    <span class="quantity-value" id="quantity-special-masaladosa">1</span>
+                                    <button onclick="increment6( 'masala-dosa')" class="quantity-button" id="increment-6">+</button>
+                                </div>
+                                <div class="price">Rs.69</div>
+                                <a href="#" class="btn-menu" id="buy-now-6">buy now</a>
+                            </div>
                         </div>
                         <div class="box">
-                            <div class="info">
+                            <div class="info" data-name="food-20">
                                 <h3>Shikanji</h3>
                                 <p>A traditional Indian lemonade made with fresh lemon juice, sugar, and spices.</p>
                             </div>
-                            <div class="price">Rs.69</div>
+                            <div class="quantity-part">
+
+                                <div class="quantity">
+                                    <label for="quantity-1">Quantity:</label>
+                                    <button onclick="decrement6( 'masala-dosa')" class="quantity-button" id="decrement-6">-</button>
+                                    <span class="quantity-value" id="quantity-special-masaladosa">1</span>
+                                    <button onclick="increment6( 'masala-dosa')" class="quantity-button" id="increment-6">+</button>
+                                </div>
+                                <div class="price">Rs.69</div>
+                                <a href="#" class="btn-menu" id="buy-now-6">buy now</a>
+                            </div>
                         </div>
                         <div class="box">
-                            <div class="info">
+                            <div class="info" data-name="food-21">
                                 <h3>cold-drink(Sprite/Pepsi/coca-cola)</h3>
                                 <p>Chill in the warmth we bring to your tummy and heart.</p>
                             </div>
-                            <div class="price">Rs.69</div>
+                            <div class="quantity-part">
+
+                                <div class="quantity">
+                                    <label for="quantity-1">Quantity:</label>
+                                    <button onclick="decrement6( 'masala-dosa')" class="quantity-button" id="decrement-6">-</button>
+                                    <span class="quantity-value" id="quantity-special-masaladosa">1</span>
+                                    <button onclick="increment6( 'masala-dosa')" class="quantity-button" id="increment-6">+</button>
+                                </div>
+                                <div class="price">Rs.69</div>
+                                <a href="#" class="btn-menu" id="buy-now-6">buy now</a>
+                            </div>
                         </div>
-                        <div class="box">
+                        <!-- <div class="box">
                             <div class="info">
                                 <h3>Watermelon Cooler</h3>
                                 <p>Fresh watermelon juice blended with ice and a hint of mint.</p>
@@ -593,7 +750,7 @@
                                 <p>Fresh strawberries blended with crushed ice and a touch of sweet syrup.</p>
                             </div>
                             <div class="price">Rs.69</div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -606,49 +763,38 @@
     </section>
     <!-- menu section end -->
     <!-- order section start -->
+
     <section id="order" class="order">
         <div class="heading">
             <span>order now</span>
             <h3>fast home delivery</h3>
         </div>
-        <form action="">
+        <form action="" onsubmit="return validateForm()">
             <div class="box-container">
                 <div class="box">
                     <div class="inputBox">
                         <span>full name</span>
-                        <input type="text" placeholder="enter your name" required>
+                        <input type="text" name="full-name" placeholder="enter your name" required>
                     </div>
                     <div class="inputBox">
-                        <span>food name</span>
-                        <input type="text" placeholder="food you want" required>
+                        <span>Email</span>
+                        <input type="email" name="email" placeholder="enter your email" required>
                     </div>
-                    <!-- <div class="inputBox">
-                        <span>order details</span>
-                        <textarea name="" id="order-details" class="order-details" cols="30" rows="10" placeholder="your order"></textarea>
-                    </div> -->
                     <div class="inputBox">
-                        <span>order details</span>
-                        <textarea name="" id="order-details" class="order-details" cols="30" rows="10" placeholder="your order"></textarea>
+                        <span>Mobile number</span>
+                        <input type="number" name="mobile-number" placeholder="enter your mobile number">
                     </div>
-
                     <div class="inputBox">
-                        <span>your address</span> <address> <textarea name="" id="" cols="30" rows="100" placeholder="enter your address"></textarea></address>
+                        <span>your address</span>
+                        <textarea name="address" id="address" cols="30" rows="10" placeholder="enter your address"></textarea>
                     </div>
                 </div>
                 <div class="box">
                     <div class="inputBox">
-                        <span>number</span>
-                        <input type="number" placeholder="enter your number">
+                        <span>order details</span>
+                        <textarea name="order-details" id="order-details" cols="30" rows="20" placeholder="your order"></textarea>
                     </div>
                     <div class="inputBox">
-                        <span>how much</span>
-                        <input type="number" placeholder="how many you want">
-                    </div>
-                    <div class="inputBox">
-                        <span>when you want</span>
-                        <input type="datetime-local" required>
-                    </div>
-                    <div class=" inputBox ">
                         <span>our address</span>
                         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2413.2408109679636!2d82.79042528482167!3d27.49998769624855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39971b2b110490b1%3A0xfe3c56739ae1c1a1!2sZaika%20fast%20food%20%26%20Restaurant!5e0!3m2!1sen!2sin!4v1696047575344!5m2!1sen!2sin"
                             allowfullscreen="" loading="lazy"></iframe>
@@ -657,7 +803,6 @@
             </div>
             <input type="submit" value="order now" class="btn">
         </form>
-
     </section>
     <!-- order section end -->
 
@@ -676,13 +821,12 @@
                     </div>
                     <div class="content">
                         <div class="icon">
-                            <a href="#"> <i class="fas fa-calendar"></i>30th sep,2023</a>
-                            <a href="#"> <i class="fas fa-user"></i>by admin</a>
+                            <a href="#"><i class="fas fa-calendar"></i> 30th Sep, 2023</a>
+                            <a href="#"><i class="fas fa-user"></i> by admin</a>
                         </div>
                         <a href="#" class="title">about title blogs here</a>
                         <p>Chill in the warmth we bring to your tummy and heart.</p>
                         <a href="#" class="btn">read more</a>
-
                     </div>
                 </div>
                 <div class="swiper-slide slide">
@@ -692,13 +836,12 @@
                     </div>
                     <div class="content">
                         <div class="icon">
-                            <a href="#"> <i class="fas fa-calendar"></i>30th sep,2023</a>
-                            <a href="#"> <i class="fas fa-user"></i>by admin</a>
+                            <a href="#"><i class="fas fa-calendar"></i> 30th Sep, 2023</a>
+                            <a href="#"><i class="fas fa-user"></i> by admin</a>
                         </div>
                         <a href="#" class="title">about title blogs here</a>
                         <p>Chill in the warmth we bring to your tummy and heart.</p>
                         <a href="#" class="btn">read more</a>
-
                     </div>
                 </div>
                 <div class="swiper-slide slide">
@@ -708,13 +851,12 @@
                     </div>
                     <div class="content">
                         <div class="icon">
-                            <a href="#"> <i class="fas fa-calendar"></i>30th sep,2023</a>
-                            <a href="#"> <i class="fas fa-user"></i>by admin</a>
+                            <a href="#"><i class="fas fa-calendar"></i> 30th Sep, 2023</a>
+                            <a href="#"><i class="fas fa-user"></i> by admin</a>
                         </div>
                         <a href="#" class="title">about title blogs here</a>
                         <p>Chill in the warmth we bring to your tummy and heart.</p>
                         <a href="#" class="btn">read more</a>
-
                     </div>
                 </div>
                 <div class="swiper-slide slide">
@@ -724,13 +866,12 @@
                     </div>
                     <div class="content">
                         <div class="icon">
-                            <a href="#"> <i class="fas fa-calendar"></i>30th sep,2023</a>
-                            <a href="#"> <i class="fas fa-user"></i>by admin</a>
+                            <a href="#"><i class="fas fa-calendar"></i> 30th Sep, 2023</a>
+                            <a href="#"><i class="fas fa-user"></i> by admin</a>
                         </div>
                         <a href="#" class="title">about title blogs here</a>
                         <p>Chill in the warmth we bring to your tummy and heart.</p>
                         <a href="#" class="btn">read more</a>
-
                     </div>
                 </div>
                 <div class="swiper-slide slide">
@@ -740,13 +881,12 @@
                     </div>
                     <div class="content">
                         <div class="icon">
-                            <a href="#"> <i class="fas fa-calendar"></i>30th sep,2023</a>
-                            <a href="#"> <i class="fas fa-user"></i>by admin</a>
+                            <a href="#"><i class="fas fa-calendar"></i> 30th Sep, 2023</a>
+                            <a href="#"><i class="fas fa-user"></i> by admin</a>
                         </div>
                         <a href="#" class="title">about title blogs here</a>
                         <p>Chill in the warmth we bring to your tummy and heart.</p>
                         <a href="#" class="btn">read more</a>
-
                     </div>
                 </div>
                 <div class="swiper-slide slide">
@@ -756,13 +896,12 @@
                     </div>
                     <div class="content">
                         <div class="icon">
-                            <a href="#"> <i class="fas fa-calendar"></i>30th sep,2023</a>
-                            <a href="#"> <i class="fas fa-user"></i>by admin</a>
+                            <a href="#"><i class="fas fa-calendar"></i> 30th Sep, 2023</a>
+                            <a href="#"><i class="fas fa-user"></i> by admin</a>
                         </div>
                         <a href="#" class="title">about title blogs here</a>
                         <p>Chill in the warmth we bring to your tummy and heart.</p>
                         <a href="#" class="btn">read more</a>
-
                     </div>
                 </div>
                 <div class="swiper-slide slide">
@@ -772,13 +911,12 @@
                     </div>
                     <div class="content">
                         <div class="icon">
-                            <a href="#"> <i class="fas fa-calendar"></i>30th sep,2023</a>
-                            <a href="#"> <i class="fas fa-user"></i>by admin</a>
+                            <a href="#"><i class="fas fa-calendar"></i> 30th Sep, 2023</a>
+                            <a href="#"><i class="fas fa-user"></i> by admin</a>
                         </div>
                         <a href="#" class="title">about title blogs here</a>
                         <p>Chill in the warmth we bring to your tummy and heart.</p>
                         <a href="#" class="btn">read more</a>
-
                     </div>
                 </div>
                 <div class="swiper-slide slide">
@@ -788,18 +926,17 @@
                     </div>
                     <div class="content">
                         <div class="icon">
-                            <a href="#"> <i class="fas fa-calendar"></i>30th sep,2023</a>
-                            <a href="#"> <i class="fas fa-user"></i>by admin</a>
+                            <a href="#"><i class="fas fa-calendar"></i> 30th Sep, 2023</a>
+                            <a href="#"><i class="fas fa-user"></i> by admin</a>
                         </div>
                         <a href="#" class="title">about title blogs here</a>
                         <p>Chill in the warmth we bring to your tummy and heart.</p>
                         <a href="#" class="btn">read more</a>
-
                     </div>
                 </div>
-
             </div>
             <div class="swiper-pagination"></div>
+
 
         </div>
     </section>
@@ -833,11 +970,11 @@
             </div>
         </div>
         <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
 
-            <a href="#" class="fab fa-instagram"></a>
+            <a href="https://www.instagram.com/?hl=en" class="fab fa-instagram"></a>
 
-            <a href="#" class="fab fa-linkedin"></a>
+            <a href="https://www.linkedin.com/feed/" class="fab fa-linkedin"></a>
 
         </div>
         <div class="credit">created by <span>Mr.Ajay Kumar</span>|all rights reserved!
@@ -882,19 +1019,14 @@
 
 
 
-    <script src=" https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js " integrity="sha512-b4rL1m5b76KrUhDkj2Vf14Y0l1NtbiNXwV+SzOzLGv6Tz1roJHa70yr8RmTUswrauu2Wgb/xBJPR8v80pQYKtQ==" crossorigin=" anonymous
-                " referrerpolicy="no-referrer "></script>
+    <script src=" https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js" integrity="sha512-b4rL1m5b76KrUhDkj2Vf14Y0l1NtbiNXwV+SzOzLGv6Tz1roJHa70yr8RmTUswrauu2Wgb/xBJPR8v80pQYKtQ==" crossorigin=" anonymous
+                               " referrerpolicy="no-referrer"></script>
 
-    <script src="file3.js "></script>
+    <script src="file3.js"></script>
     <script>
         lightGallery(document.querySelector('.gallery .gallery-container'));
     </script>
-
-</body>
-
-</html> lightGallery(document.querySelector('.gallery .gallery-container'));
-</script>
 
 </body>
 
