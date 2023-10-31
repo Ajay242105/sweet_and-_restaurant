@@ -1,5 +1,5 @@
 // slider code is taken from swiper demos
-let navbar = document.querySelector('.header.navbar');
+let navbar = document.querySelector('.header .navbar');
 let menubtn = document.querySelector('#menu-btn');
 menubtn.onclick = () => {
     menubtn.classList.toggle('fa-times');
@@ -124,14 +124,14 @@ function updateOrderDetailsTextarea() {
 
 
 // Define the quantity variable for Pakoda
-let specialchowmeinQuantity = 0;
+let specialChowmeinQuantity = 0;
 let pakodaQuantity = 0;
 let masalaQuantity = 0;
 let burgarQuantity = 0;
 let samosaQuantity = 0;
 let dosaQuantity = 0;
 let parathaQuantity = 0;
-let daltadkaQuantity = 0;
+// let daltadkaQuantity = 0;
 
 
 // Initialize default value of data (0) in the h2 tag for Pakoda
@@ -142,7 +142,7 @@ document.getElementById("quantity-burgar").innerText = burgarQuantity;
 document.getElementById("quantity-samosa").innerText = samosaQuantity;
 document.getElementById("quantity-special-masaladosa").innerText = dosaQuantity;
 document.getElementById("quantity-aloo-paratha").innerText = parathaQuantity;
-document.getElementById("quantity-dal-tadka").innerText = daltadkaQuantity;
+// document.getElementById("quantity-dal-tadka").innerText = daltadkaQuantity;
 
 
 // Function to increment the quantity 
@@ -156,9 +156,9 @@ function increment1(foodName) {
 }
 // Function to decrement the quantity for Pakoda
 function decrement1(foodName) {
-    if (foodName === 'special-chowmein' && specialchowmeinQuantity > 0) {
+    if (foodName === 'special-chowmein' && specialChowmeinQuantity > 0) {
         specialChowmeinQuantity -= 1;
-        document.getElementById("quantity-special-chowmein").innerText = specialchowmeinQuantity;
+        document.getElementById("quantity-special-chowmein").innerText = specialChowmeinQuantity;
         updatePreviewQuantity("food-1"); // Update the preview quantity
     }
 }
@@ -267,21 +267,21 @@ function decrement7(foodName) {
     }
 }
 
-function increment7(foodName) {
-    if (foodName === 'dal-tadka') {
-        daltadkaQuantity += 1;
-        document.getElementById("quantity-dal-tadka").innerText = daltadkaQuantity;
-        updatePreviewQuantity("food-10"); // Update the preview quantity
-    }
-}
-// Function to decrement the quantity for Pakoda
-function decrement7(foodName) {
-    if (foodName === 'dal-tadka' && daltadkaQuantity > 0) {
-        daltadkaQuantity -= 1;
-        document.getElementById("quantity-dal-tadka").innerText = daltadkaQuantity;
-        updatePreviewQuantity("food-10"); // Update the preview quantity
-    }
-}
+// function increment10(foodName) {
+//     if (foodName === 'dal-tadka') {
+//         daltadkaQuantity += 1;
+//         document.getElementById("quantity-dal-tadka").innerText = daltadkaQuantity;
+//         updatePreviewQuantity("food-10"); // Update the preview quantity
+//     }
+// }
+// // Function to decrement the quantity for Pakoda
+// function decrement10(foodName) {
+//     if (foodName === 'dal-tadka' && daltadkaQuantity > 0) {
+//         daltadkaQuantity -= 1;
+//         document.getElementById("quantity-dal-tadka").innerText = daltadkaQuantity;
+//         updatePreviewQuantity("food-10"); // Update the preview quantity
+//     }
+// }
 
 // Add event listener for the "buy now" button 
 document.getElementById("buy-now-1").addEventListener("click", function(event) {
@@ -328,13 +328,13 @@ document.getElementById("buy-now-7").addEventListener("click", function(event) {
 
     addToOrder("Aloo-Paratha", 39, parathaQuantity);
 });
-document.getElementById("buy-now-10").addEventListener("click", function(event) {
-    alert("Dal-tadka hasbeen added successfully");
+// document.getElementById("buy-now-10").addEventListener("click", function(event) {
+//     alert("Dal-tadka hasbeen added successfully");
 
-    event.preventDefault();
+//     event.preventDefault();
 
-    addToOrder("al-tadka", 39, daltadkaQuantity);
-});
+//     addToOrder("dal-tadka", 39, daltadkaQuantity);
+// });
 
 // Ensure you have the updatePreviewQuantity function and addToOrder function from your existing code.
 
